@@ -1,0 +1,23 @@
+﻿<Window x:Class="GTA5MenuTools.AddKeyWorsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GTA5MenuTools"
+        mc:Ignorable="d"
+        Title="请输入文本" Height="300" Width="400" WindowStartupLocation="CenterScreen">
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBox x:Name="TextTF" Grid.Row="0" Grid.Column="0" TextWrapping="Wrap" FontSize="20" />
+        <StackPanel Grid.Row="1" Grid.Column="0">
+            <Button Margin="0,10,0,0" Height="30"  Click="Button_Click">确定</Button>
+            <Button x:Name="RemoveButton"  Margin="0,5,0,0" Height="30" Click="RemoveButton_Click">删除</Button>
+        </StackPanel>
+        
+
+    </Grid>
+</Window>
